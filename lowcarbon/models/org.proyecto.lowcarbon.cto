@@ -1,0 +1,91 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+namespace org.proyecto.lowcarbon
+
+/**
+ * The type of perishable product being shipped
+ */
+enum VehicleStatus {
+  o ON
+  o OFF
+}
+
+enum SensorStatus {
+  o ON
+  o REVISION
+  o OFF
+}
+
+abstract participant Company identified by companyId{
+  o String companyId
+  o String name
+}
+
+participant VehicleCompany extends Company{
+  o Integer numberVehicles
+}
+
+participant SensorCertifier extends Company{
+}
+
+participant Government extends Company{
+}
+
+participant Contractor extends Company{
+}
+
+asset Sensor identified by sensorId {
+  o String sensorId
+  o String vehicleId
+  o String certificadoId
+  o String companyId
+  o String contractId
+  o EmisionReading[] dataSensor optional
+  o SensorStatus status
+}
+
+asset CertificateSensor identified by certificateId {
+  o String certificateId
+  o String timeExpedition
+  o String timeRevision
+  o String companyId
+}
+
+asset Vehicle identified by vinId {
+  o String vinId
+  o String sensor1Id optional
+  o String sensor2Id optional
+  o String sensor3Id optional
+  o String companyId
+  o VehicleStatus status
+}
+
+
+asset Contract identified by contractId {
+  o String contractId
+  o Double maxEmisionCO2
+}
+
+transaction EmisionReading{
+  --> Sensor sensor
+  --> Vehicle vehicle 
+  o Double emisionCO2 
+  --> Contract contract
+}
+
+event RevisionSensorEvent {
+  o String sensorId
+  o String vinId
+}
