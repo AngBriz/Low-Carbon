@@ -34,3 +34,7 @@ yo hyperledger-composer:angular
 #<press enter>
 #<press enter>
 #namespaces NOT used
+
+# Run ANGULAR APP
+cd ~/Low-Carbon/lowcarbon-app
+nohup npm start > angular-app.out 2> angular-app.err < /dev/null &
