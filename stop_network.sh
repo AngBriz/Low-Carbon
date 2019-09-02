@@ -9,6 +9,6 @@ netstat -putan | grep 3000 | cut -d "/" -f 1 | awk '{ system("kill -9 "$7 ) }'
 sleep 5
 
 # Stop Hyperledger Fabic Network
-cd ~/proyecto/fabric-dev-servers/
+cd ~/fabric-dev-servers/
 ./stopFabric.sh
 
