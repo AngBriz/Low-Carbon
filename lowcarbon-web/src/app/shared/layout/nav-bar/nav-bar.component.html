@@ -1,0 +1,21 @@
+
+
+
+<div class="slim-navbar mg-b-20">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#" routerLink="/dashboard">
+            <i class="icon ion-ios-analytics"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li *ngxPermissionsOnly="['CERTIFIER', 'COMPANY', 'ADMIN']" class="nav-item mega-dropdown">
+          <a class="nav-link" href="#" routerLink="/vehicle">
+            <i class="icon ion-ios-car"></i>
+            <span>Vehicles</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>

@@ -1,0 +1,25 @@
+<div class="container" ng-sidebar-content>
+    <div class="flex-row">
+        <!-- filters -->
+        <div class="filters-container">
+            <ng-sidebar [(opened)]="_opened" [position]="'right'">
+                <p>Sidebar contents</p>
+                <button (click)="_toggleSidebar()">Toggle sidebar</button>
+            </ng-sidebar>
+        </div>
+    </div>
+    <div class="flex-row">
+        <!-- filters -->
+        <div class="">
+
+        </div>
+        <div class="d-flex flex-wrap">
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+            <app-sensor-card [sensorImage]="'http://lorempixel.com/400/200/transport'"></app-sensor-card>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+<div  class="section-wrapper mg-t-20 animated fadeInDown">
+    <form [formGroup]="sensorForm">
+    <aw-wizard>
+        <aw-wizard-step stepTitle="Choose certifier company">
+            <div class="container">
+                <div class="section-wrapper mg-t-20">
+                    <div class="d-flex">
+
+                        <div *ngFor="let company of companies$ | async"
+                            class="card tx-center hvr-sweep-to-top pd-10 bd bd-5 mg-r-20" selected
+                            (click)="companyHasIdSelected(company.companyId)">
+                            <div class="card-body pd-10">
+                                <div class="d-flex justify-content-center mg-b-30">
+                                    <img src="/assets/images/logo-certifier.png"
+                                        class="wd-100 img-fluid rounded-circle hvr-grow" alt="">
+                                </div>
+                                <h6 class="tx-md-20 tx-white mg-b-20 hvr-grow">{{company?.name}}</h6>
+                            </div><!-- card -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <button type="button" class="btn btn-oblong btn-primary mg-t-20 mg-r-20" awNextStep>Next Step</button>
+            </div>
+        </aw-wizard-step>
+
+        <aw-wizard-step stepTitle="Senor Id">
+                <div class="container">
+                    <div class="section-wrapper mg-t-20">
+                        <div class="d-flex align-items-center">
+                            <div class="tx-lg-50 tx-md-50  tx-lg-40 tx-sx-60 tx-primary  hvr-grow mg-r-20"><i
+                                    class="icon ion-ios-speedometer"></i></div>
+                            <input formControlName="sensorId" class="form-control tx-50p ht-70p"
+                                placeholder="sensorId" type="text">
+                        </div>
+    
+                    </div>
+                </div>
+                    <button type="button" class="btn btn-oblong btn-primary mg-t-20 mg-r-20" awNextStep>Next Step</button>
+            </aw-wizard-step>
+
+        <aw-wizard-step stepTitle="certifier Id">
+                <div class="container">
+                    <div class="section-wrapper mg-t-20">
+                        <div class="d-flex align-items-center">
+                            <div class="tx-lg-50 tx-md-50  tx-lg-40 tx-sx-60 tx-primary  hvr-grow mg-r-20"><i
+                                    class="icon ion-ios-paper"></i></div>
+                            <input formControlName="certificateId" class="form-control tx-50p ht-70p"
+                                placeholder="certificateId" type="text">
+                        </div>
+    
+                    </div>
+    
+                    <button type="button" class="btn btn-oblong btn-primary mg-t-20 mg-r-20" awPreviousStep>Go to previous
+                        step</button>
+                    <button type="button" class="btn btn-oblong btn-success mg-t-20" [swal]="deleteSwal">Finish</button>
+                </div>
+                <swal #deleteSwal title="Create sensor?" text="This cannot be undone" type="question"
+                    [showCancelButton]="true" [focusCancel]="true" (confirm)="createSensor()">
+                </swal>
+                <swal #successCreateVehicle title="OK!" text="Sensor created!!!" type="success" [showCancelButton]="true"
+                    [focusCancel]="true">
+                </swal>
+                <swal #successCreateVehicle title="ERROR!" text="Sensor NOT created!!!" type="error"
+                    [showCancelButton]="true" [focusCancel]="true">
+                </swal>
+        </aw-wizard-step>
+    </aw-wizard>
+</form>
+
+</div>

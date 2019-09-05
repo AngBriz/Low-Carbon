@@ -1,0 +1,46 @@
+.card-car{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    h3{
+        color: #fff;
+        font-weight: 200;
+    }
+    h4{
+        color: #fff;
+        font-weight: 200;
+    }
+    p{
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        border-bottom: 2px solid gray
+    }
+    i {
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+}
+
+.close {
+    font-size: 50px;
+}
+
+.btn-sensor {
+   padding:  1rem 1.5rem;
+   border-radius: 15px;
+   color: #fff;
+   font-size: 1.2rem;
+}
+
+.img-car{
+    max-height: 300px;
+}
+
+.self{
+    justify-self: end;
+}

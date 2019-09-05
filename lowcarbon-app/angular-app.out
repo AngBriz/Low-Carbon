@@ -5,9 +5,8 @@
 ** NG Live Development Server is running on http://0.0.0.0:4200 **
 [HPM] Proxy created: [ '/auth', '/api' ]  ->  http://localhost:3000
 [HPM] Proxy created: /  ->  http://localhost:3000
-webpack: wait until bundle finished: /
 Hash: [1m0b97a900fa86cd9c9a30[39m[22m
-Time: [1m14503[39m[22mms
+Time: [1m13580[39m[22mms
 chunk    {[1m[33m0[39m[22m} [1m[32mpolyfills.bundle.js, polyfills.bundle.js.map[39m[22m (polyfills) 297 kB {[1m[33m5[39m[22m}[1m[33m [initial][39m[22m[1m[32m [rendered][39m[22m
 chunk    {[1m[33m1[39m[22m} [1m[32mmain.bundle.js, main.bundle.js.map[39m[22m (main) 266 kB {[1m[33m4[39m[22m}[1m[33m [initial][39m[22m[1m[32m [rendered][39m[22m
 chunk    {[1m[33m2[39m[22m} [1m[32mstyles.bundle.js, styles.bundle.js.map[39m[22m (styles) 184 kB {[1m[33m5[39m[22m}[1m[33m [initial][39m[22m[1m[32m [rendered][39m[22m

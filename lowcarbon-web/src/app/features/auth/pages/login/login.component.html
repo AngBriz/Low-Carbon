@@ -1,0 +1,27 @@
+<div class="d-md-flex flex-row-reverse">
+  <div class="signin-right">
+
+    <div class="signin-box">
+        <h2 class="slim-logo"><a href="index.html">Low-Carbon<span>.</span></a></h2>
+
+      <div class="form-group">
+        <input type="text" #email class="form-control" placeholder="Enter your email">
+      </div><!-- form-group -->
+      <div class="form-group mg-b-50">
+        <input type="password" #password class="form-control" placeholder="Enter your password">
+      </div><!-- form-group -->
+      <button class="btn btn-primary btn-block btn-signin" (click)="login(email.value,password.value)">Sign In</button>
+      <ng-container *ngIf="errorLogin">
+          <div class="alert alert-danger mg-b-0" role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+              <strong>Oh snap!</strong> Email or Password not found
+            </div>
+      </ng-container>
+    </div>
+
+  </div><!-- signin-right -->
+  <div>
+    <img src="assets/images/logo-login.png" class="image-logo">
+  </div><!-- d-flex -->

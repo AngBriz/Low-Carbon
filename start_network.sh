@@ -4,6 +4,11 @@
 #
 #
 
+#setup nvm environment
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # start Hyperledger Fabict network
 cd ~/fabric-dev-servers/
 ./startFabric.sh
@@ -16,15 +21,18 @@ composer network start --networkName lowcarbon --networkVersion 0.0.3 --networkA
 # Deploy API-REST
 nohup composer-rest-server -c admin@lowcarbon -n never -w true > rest-server.out 2> rest-server.err < /dev/null &
 
-# Deploy ANGULAR APP
-yo hyperledger-composer:angular
-
-# Run ANGULAR APP
-sleep 10
-cd ~/Low-Carbon/lowcarbon-app
-nohup npm start > angular-app.out 2> angular-app.err < /dev/null &
-
 # Run Blockchain Explorer
 cd ~/Low-Carbon/blockchain-explorer
-npm install
-./start
+npm install > "/dev/null" 2>&1
+sleep 5
+./start.sh
+
+#use nvm version 12
+nvm use v12.8.0
+
+# Deploy and run ANGULAR APP
+cd ~/Low-Carbon/lowcarbon-web/
+nohup ng serve > angular-app.out 2> angular-app.err < /dev/null &
+
+sleep 10
+cd ..
