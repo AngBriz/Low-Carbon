@@ -63,11 +63,11 @@ sudo apt-get update
 echo ''
 echo 'Installation completed, versions installed are:'
 echo ''
-echo -n 'composer:           '
+echo -n 'composer: '
 composer --version
-echo -n 'composer-rest-server:            '
+echo -n 'composer-rest-server: '
 composer-rest-server --version
-echo -n 'yo:         '
+echo -n 'yo: '
 yo --version
 echo -n 'Composer Playground: '
 composer-playground --version
