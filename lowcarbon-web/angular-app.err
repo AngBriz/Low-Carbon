@@ -1,3 +1,4 @@
+WARNING: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
 DEPRECATION WARNING: As of Dart Sass 2.0.0, !global assignments won't be able to
 declare new variables. Since this assignment is at the root of the stylesheet,
 the !global flag is unnecessary and can safely be removed.

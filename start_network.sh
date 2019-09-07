@@ -30,9 +30,16 @@ sleep 5
 #use nvm version 12
 nvm use v12.8.0
 
+echo ''
+echo ''
+echo "### Please wait, this action take up 1 minute ###"
+echo ''
+echo ''
+
 # Deploy and run ANGULAR APP
 cd ~/Low-Carbon/lowcarbon-web/
-nohup ng serve > angular-app.out 2> angular-app.err < /dev/null &
+nohup ng serve --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
 
-sleep 10
-cd ..
+# Go to Project path
+cd ~/Low-Carbon/
+sleep 60
