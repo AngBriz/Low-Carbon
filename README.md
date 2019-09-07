@@ -46,7 +46,7 @@ Continuamos con la instalación de **Hyperledger Fabric**:
 
 Arrancamos Hyperledger fabric mediante contenedores docker, utilizando el script __startFabric.sh__:
 
-     cd ~/fabric-dev-servers 
+    cd ~/fabric-dev-servers 
     export FABRIC_VERSION=hlfv12 
     ./startFabric.sh 
  
@@ -115,9 +115,10 @@ __<dirección ip del servidor>:4200__
 
 
 Para realizar la parada de la red ejecutamos el script que se encuentra en el directorio raiz llamado __stop_network.sh__
+
     cd ~/Low-Carbon
     chmod u+x stop_network.sh
-	  ./stop_network.sh
+    ./stop_network.sh
     
 
 
@@ -125,7 +126,7 @@ Para arrancar de nuevo la blockchain junto con todas las aplicaciones, no es nec
 
     cd ~/Low-Carbon
     chmod u+x start_network.sh
-	  ./start_network.sh
+    ./start_network.sh
 
 
 
