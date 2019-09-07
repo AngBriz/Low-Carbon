@@ -31,6 +31,10 @@ fi
 echo "# Updating package lists"
 sudo apt-get update
 
+# Installing net-tools
+echo "# Installing net-tools"
+sudo apt-get install net-tools
+
 # Installing new version of nodeJs
 echo "# Installing new version of nodeJs"
 nvm install v12.8.0
