@@ -1,6 +1,5 @@
-#### Low-Carbon
+# Low-Carbon #
 Low-Carbon TFM development
-####
 
 Para realizar el despliegue de la solución propuesta partimos de un PC con Ubuntu 16.04.6 LTS instalado.
 Para la instalación de hyperledger composer vamos a crear un nuevo usuario (hyperledger), ya que debe instalarse como usuario sin privilegios y le vamos a añadir al fichero sudoers. Adquirimos permisos de root “su -” y ejecutamos los siguientes comandos:
@@ -79,7 +78,8 @@ Creamos la API-REST mediante la inicialización del servidor. Para ello ejecutam
 
     nohup composer-rest-server -c admin@lowcarbon -n never -w true > rest-server.out 2> rest-server.err < /dev/null &
 
-Podemos comprobar que la API-REST está funcionando correctamente introduciendo en nuestro navegador __<dirección ip del servidor>:3000__
+Podemos comprobar que la API-REST está funcionando correctamente introduciendo en nuestro navegador 
+__<dirección ip del servidor>:3000__
  
 
 
@@ -95,7 +95,8 @@ Posteriormente vamos a proceder a publicar el explorador de bloques ejecutando:
     npm install
     ./start.sh
     
-Podemos comprobar que la API-REST está funcionando correctamente introduciendo en nuestro navegador __<dirección ip del servidor>:8080__
+Podemos comprobar que la API-REST está funcionando correctamente introduciendo en nuestro navegador 
+__<dirección ip del servidor>:8080__
 
 
 Instalamos los prerrequisitos de Angular, para poder levantar la interfaz web que nos permite interactuar con la blockchain:
@@ -109,7 +110,8 @@ Arrancamos ahora el entorno web con Angular. Esta acción toma unos minutos en a
     cd ~/Low-Carbon/lowcarbon-web/
     nohup ng serve --open --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
 
-Podemos comprobar que la web está funcionando correctamente introduciendo en nuestro navegador __<dirección ip del servidor>:4200__
+Podemos comprobar que la web está funcionando correctamente introduciendo en nuestro navegador 
+__<dirección ip del servidor>:4200__
 
 
 Para realizar la parada de la red ejecutamos el script que se encuentra en el directorio raiz llamado __stop_network.sh__
