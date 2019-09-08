@@ -1,0 +1,27 @@
+WARNING: Running a server with --disable-host-check is a security risk. See https://medium.com/webpack/webpack-dev-server-middleware-security-issues-1489d950874a for more information.
+DEPRECATION WARNING: As of Dart Sass 2.0.0, !global assignments won't be able to
+declare new variables. Since this assignment is at the root of the stylesheet,
+the !global flag is unnecessary and can safely be removed.
+
+   ╷
+44 │ $wz-param-indicator-state: null !global;
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules/angular-archwizard/variables.scss 44:1  @import
+    node_modules/angular-archwizard/archwizard.scss 1:9  @import
+    src/styles/scss/verdors/archwizard/_main.scss 2:9    @import
+    stdin 7:9                                            root stylesheet
+
+DEPRECATION WARNING: As of Dart Sass 2.0.0, !global assignments won't be able to
+declare new variables. Since this assignment is at the root of the stylesheet,
+the !global flag is unnecessary and can safely be removed.
+
+   ╷
+47 │ $wz-param-indicator-color: null !global;
+   │ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   ╵
+    node_modules/angular-archwizard/variables.scss 47:1  @import
+    node_modules/angular-archwizard/archwizard.scss 1:9  @import
+    src/styles/scss/verdors/archwizard/_main.scss 2:9    @import
+    stdin 7:9                                            root stylesheet
+

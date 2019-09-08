@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="flex-row">
+        <div class="d-flex justify-content-end">
+            <div class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input class="tx-20 form-control" [(ngModel)]="chasisFilter" />
+                        <div class="input-group-append">
+                            <button class="btn p-2 btn-outline-secondary" type="button"><i class="icon ion-ios-car tx-30 tx-white"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-row">
+        <div class="d-flex flex-wrap justify-content-start">
+            <app-car-card-new *ngxPermissionsOnly="['COMPANY', 'ADMIN']"></app-car-card-new>
+            <ng-container *ngFor="let vehicle of (vehicles$ | async) | vehicleChasis : chasisFilter">
+                <app-car-card [data]="vehicle"></app-car-card>
+            </ng-container>
+        </div>
+    </div>
+</div>
