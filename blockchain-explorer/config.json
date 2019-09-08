@@ -7,11 +7,11 @@
 							"requests": "grpc://127.0.0.1:7051",
 							"events": "grpc://127.0.0.1:7053",
 							"server-hostname": "peer0.org1.example.com",
-							"tls_cacerts": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+							"tls_cacerts": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv12/composer/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
 					},
 					"admin": {
-							"key": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
-							"cert": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv1/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+							"key": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv12/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore",
+							"cert": "/home/hyperledger/fabric-dev-servers/fabric-scripts/hlfv12/composer/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
 					}
 			}
 	},

@@ -23,6 +23,7 @@ nohup composer-rest-server -c admin@lowcarbon -n never -w true > rest-server.out
 
 # Run Blockchain Explorer
 cd ~/Low-Carbon/blockchain-explorer
+mysql -u root -pconsensuando < db/fabricexplorer.sql
 npm install > "/dev/null" 2>&1
 sleep 5
 ./start.sh
