@@ -26,7 +26,7 @@ nvm install v12.8.0
 
 # Installing new version of angular
 echo "# Installing new version of Angular-cli and Angular-core"
-npm install -g @angular/cli @angular/core
+npm install -g @angular/cli @angular/core ngx-gauge
 
 # Configure Angular-cli warnings
 echo "# Hide Angular-cli warnings"

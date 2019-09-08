@@ -21,7 +21,6 @@ export class LoginService {
    }
 
   login(email : string, password : string){
-    const user = this.usersData.find(o => o.email === email && o.pass === password);
 
     if(!environment.production && !email && !password){
       let admin = this.usersData.find(o => o.email === 'admin');
@@ -30,6 +29,7 @@ export class LoginService {
       return admin;
     }
 
+    const user = this.usersData.find(o => o.email === email && o.pass === password);
     if(user){
       this.permissionsService.loadPermissions([user.permission])
       this.user.next(user);

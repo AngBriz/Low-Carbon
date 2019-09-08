@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { VehicleMeasure, Measure } from './models/VehicleMeasure';
 import NanoDate, * as nano from 'nano-date';
 import { map } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +11,9 @@ import { map } from 'rxjs/operators';
 export class MeasuresService {
 
   constructor(private http : HttpClient) {
-    this.http.post("http://localhost:8086/query?q=CREATE DATABASE CO2","").subscribe()
-
+    this.http.post(`${environment.influxdb_url}/query?q=CREATE DATABASE "CO2"`,{}).subscribe()
+    this.http.post(`${environment.api_url}/VehicleCompany`,{ numberVehicles: 0,companyId: "BlockPower1", name: "BlockPower"}).subscribe()
+    this.http.post(`${environment.api_url}/SensorCertifier`,  {companyId: "BlockPower1", name: "Cabon Cerfifier"}).subscribe()
   }
 
   create(measure : VehicleMeasure){
@@ -21,11 +23,11 @@ export class MeasuresService {
     }else{
       nanoDate = new NanoDate()
     }
-    return this.http.post('http://localhost:8086/write?db=CO2', `measures,company=${measure.company},vinId=${measure.vinId},sensor=${measure.sensor} value=${measure.value} ${nanoDate.getTime()}` )
+    return this.http.post(`${environment.influxdb_url}/write?db=CO2`, `measures,company=${measure.company},vinId=${measure.vinId},sensor=${measure.sensor} value=${measure.value} ${nanoDate.getTime()}` )
   }
 
   getSumMeasuresByCompany(companyId : string, dateStart : string, dateEnd : string){
-    return this.http.get<Measure>(`http://localhost:8086/query?db=CO2&q=SELECT sum(*)  FROM "measures" where company = '${companyId}' and time >= '${dateStart}' and time <= '${dateEnd}'`).pipe(
+    return this.http.get<Measure>(`${environment.influxdb_url}/query?db=CO2&q=SELECT sum(*)  FROM "measures" where company = '${companyId}' and time >= '${dateStart}' and time <= '${dateEnd}'`).pipe(
       map(o => {
         return { value : o.results[0].series[0].values[0][1] }
       })
@@ -33,7 +35,7 @@ export class MeasuresService {
   }
 
   getValuesMeasuresByCompany(companyId : string, dateStart: string, dateEnd: string){
-    return this.http.get<Measure>(`http://localhost:8086/query?db=CO2&q=SELECT  MEAN(*)  FROM "measures" where company = '${companyId}' and time >= '${dateStart}' and time <= '${dateEnd}' GROUP BY  "vinId",time(1d)`)
+    return this.http.get<Measure>(`${environment.influxdb_url}/query?db=CO2&q=SELECT  MEAN(*)  FROM "measures" where company = '${companyId}' and time >= '${dateStart}' and time <= '${dateEnd}' GROUP BY  "vinId",time(1d)`)
   }
 
   /*getValuesMeasuresByCompany(companyId : string, dateStart : string, dateEnd : string){

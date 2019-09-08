@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { SensorRoutingModule } from './sensor-routing.module';
 import { CreateComponent } from './pages/create/create.component';
-import { OverviewComponent } from './pages/overview/overview.component';
 import { SharedModule } from 'src/app/shared/layout/shared.module';
 import { ArchwizardModule } from 'angular-archwizard';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
@@ -23,7 +22,7 @@ import { NgxPermissionsModule } from 'ngx-permissions';
 
 
 @NgModule({
-  declarations: [CreateComponent, OverviewComponent, SensorCardComponent, ActiveCerfifierDirective],
+  declarations: [CreateComponent, SensorCardComponent, ActiveCerfifierDirective],
   imports: [
     CommonModule,
     SharedModule,

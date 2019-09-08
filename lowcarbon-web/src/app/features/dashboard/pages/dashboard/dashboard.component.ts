@@ -6,6 +6,7 @@ import { ThemeService } from 'ng2-charts';
 import { map, tap, count } from 'rxjs/operators';
 import { NgbDate, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { VehicleService } from 'src/app/shared/shared-services/vehicle/vehicle.service';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -97,9 +98,9 @@ export class DashboardComponent implements OnInit {
   defaultFrom = new Date(this.actualDate.setMonth(this.actualDate.getMonth()-1));
 
   public onDateRangeSelection(range: { from: Date, to: Date }) {
-    this.measuresSum$ = this.measuerService.getSumMeasuresByCompany("C1", range.from.toISOString(), range.to.toISOString() )
+    this.measuresSum$ = this.measuerService.getSumMeasuresByCompany(environment.demo_company, range.from.toISOString(), range.to.toISOString() )
 
-    this.measuerService.getValuesMeasuresByCompany("C1",range.from.toISOString(),range.to.toISOString()).subscribe(
+    this.measuerService.getValuesMeasuresByCompany(environment.demo_company,range.from.toISOString(),range.to.toISOString()).subscribe(
       o => {
         this.chartData = []
         this.chartLabels = []

@@ -28,6 +28,7 @@ sleep 5
 ./start.sh
 
 #use nvm version 12
+cd ~/Low-Carbon/lowcarbon-web/
 nvm use v12.8.0
 
 echo ''

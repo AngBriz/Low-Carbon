@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  api_url : "http://82.223.13.95:3000/api"
+  api_url : "http://localhost:3000/api",
+  influxdb_url : "http://localhost:8086",
+  demo_company : 'BlockPower1'
 };
 
 /*
