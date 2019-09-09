@@ -31,6 +31,3 @@ echo "# Downloading Hyperledger Fabric...."
 # Echo Done
 echo ''
 echo "Done"
-
-
-tar -xvf fabric-dev-servers.tar.gz
