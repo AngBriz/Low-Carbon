@@ -1,280 +1,130 @@
 mysql connection port= 3306
 Please open Internet explorer to access ：http://localhost:8080/
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:18.021] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:54.370] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:18.022] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:54.372] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:19.052] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:55.426] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:19.052] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:55.427] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:20.085] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:56.475] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:20.085] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:56.476] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:21.110] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:57.510] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:21.111] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:57.511] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:22.147] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:58.572] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:22.147] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:58.572] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query block. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:23.167] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:59.550] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:23.167] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:24.195] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:24.195] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:25.220] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:25.221] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:26.248] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:26.249] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:27.302] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:27.304] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:28.403] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:28.403] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:29.472] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:29.472] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query block. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:30.343] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-(node:4884) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'number' of undefined
+(node:4682) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'number' of undefined
     at query.getBlockByNumber.then.block (/home/hyperledger/Low-Carbon/blockchain-explorer/main.js:109:35)
     at <anonymous>
-(node:4884) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 27)
-(node:4884) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+(node:4682) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 13)
+(node:4682) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:30.519] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 16:59:59.621] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:30.520] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 16:59:59.621] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:31.554] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:31.554] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 17:00:00.687] [ERROR] Query - [39mError: Missing userContext parameter
+    at new TransactionID (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/TransactionID.js:43:10)
+    at Channel.queryInfo (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/Channel.js:765:14)
+    at helper.getOrgAdmin.then (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:93:18)
+    at <anonymous>
+[31m[2019-09-09 17:00:00.687] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:32.589] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 17:00:01.730] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:32.589] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 17:00:01.730] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:33.633] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
+[31m[2019-09-09 17:00:02.755] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [mychannel] creator org [Org1MSP]
     at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
     at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:33.633] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
+[31m[2019-09-09 17:00:02.756] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
     at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:34.662] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:34.664] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
+[31m[2019-09-09 17:00:40.899] [ERROR] Query - [39mError: Missing userContext parameter
+    at new TransactionID (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/TransactionID.js:43:10)
+    at Client.queryInstalledChaincodes (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/Client.js:582:14)
+    at helper.getOrgAdmin.then (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:127:18)
     at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:35.723] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:35.723] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:36.751] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:36.751] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:37.791] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:37.791] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:38.808] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:38.808] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
-    at <anonymous>
-[31merror[39m: [client-utils.js]: sendPeersProposal - Promise is rejected: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31merror[39m: [Channel.js]: Failed Query channel info. Error: Error: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:39.841] [ERROR] Query - [39mError: 2 UNKNOWN: access denied: channel [lowcarbon] creator org [Org1MSP]
-    at new createStatusError (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:64:15)
-    at /home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/grpc/src/client.js:583:15
-[31m[2019-09-08 23:13:39.841] [ERROR] blockscanner - [39mTypeError: Cannot read property 'low' of undefined
-    at getChainInfo.then.response (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:208:33)
+[31m[2019-09-09 17:01:17.215] [ERROR] Query - [39mError: Missing userContext parameter
+    at new TransactionID (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/TransactionID.js:43:10)
+    at Client.queryInstalledChaincodes (/home/hyperledger/Low-Carbon/blockchain-explorer/node_modules/fabric-client/lib/Client.js:582:14)
+    at helper.getOrgAdmin.then (/home/hyperledger/Low-Carbon/blockchain-explorer/app/query.js:127:18)
     at <anonymous>

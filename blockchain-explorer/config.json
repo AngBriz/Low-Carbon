@@ -17,7 +17,7 @@
 	},
 	"host": "localhost",
 	"port": "8080",
-	"channel": "lowcarbon",
+	"channel": "mychannel",
 	"keyValueStore": "/tmp/fabric-client-kvs",
 	"eventWaitTime": "30000",
 	"mysql": {

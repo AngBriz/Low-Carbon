@@ -2,15 +2,3 @@ Swagger: skipping unknown type "EmisionReading".
 Swagger: skipping unknown type "EmisionReading".
 Swagger: skipping unknown type "EmisionReading".
 Swagger: skipping unknown type "EmisionReading".
-Unhandled error for request POST /api/SensorCertifier: Error: Error trying invoke business network with transaction id 1abef5ea1d8b0f5eab95226495e3480435cd6a4bee78726b267d205ecb45d3cd. Error: Peer localhost:7051 has rejected transaction '1abef5ea1d8b0f5eab95226495e3480435cd6a4bee78726b267d205ecb45d3cd' with code MVCC_READ_CONFLICT
-    at HLFConnection.invokeChainCode (/home/hyperledger/.nvm/versions/node/v8.16.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:1117:30)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-Unhandled error for request POST /api/VehicleCompany: Error: Error trying invoke business network with transaction id d89c56edc4352351a7c9220160a68efd19bbc28e4f147bd46f37499443fd741e. Error: Peer localhost:7051 has rejected transaction 'd89c56edc4352351a7c9220160a68efd19bbc28e4f147bd46f37499443fd741e' with code MVCC_READ_CONFLICT
-    at HLFConnection.invokeChainCode (/home/hyperledger/.nvm/versions/node/v8.16.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:1117:30)
-    at <anonymous>
-    at process._tickCallback (internal/process/next_tick.js:189:7)
-Unhandled error for request POST /api/Vehicle: Error: Error trying invoke business network with transaction id 39333453db807aef7cb9acd84a004a9be5ce17735851db878d538597826d5c64. Error: No valid responses from any peers.
-Response from attempted peer comms was an error: Error: transaction returned with failure: Error: Failed to add object with ID 'Z1234' in collection with ID 'Asset:org.proyecto.lowcarbon.Vehicle' as the object already exists
-    at HLFConnection.invokeChainCode (/home/hyperledger/.nvm/versions/node/v8.16.1/lib/node_modules/composer-rest-server/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:1117:30)
-    at <anonymous>
