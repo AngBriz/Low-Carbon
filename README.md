@@ -146,7 +146,8 @@ Para inicializar todo desde el principio, deberemos borrar el setup instalado, p
     docker rm $( docker ps -aq )
     docker rmi $( docker images dev-* -q )
   
-Y procederemos a eliminar la carpeta del proyecto “Low-Carbon”
+Y procederemos a eliminar la carpeta del proyecto “Low-Carbon” y la carpeta "fabric-dev-servers"
 
     cd ~
     rm -rf Low-Carbon
+    rm -rf fabric-dev-servers
