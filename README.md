@@ -4,7 +4,7 @@ Low-Carbon TFM development
 Para realizar el despliegue de la solución propuesta partimos de un PC con Ubuntu 16.04.6 LTS instalado.
 Para la instalación de hyperledger composer vamos a crear un nuevo usuario (hyperledger), ya que debe instalarse como usuario sin privilegios y le vamos a añadir al fichero sudoers. Adquirimos permisos de root “su -” y ejecutamos los siguientes comandos:
 
-    adduser hyperledger
+    sudo adduser hyperledger
     sudo vi /etc/sudoers
 
 Añadimos la linea: **hyperledger   ALL=(ALL:ALL) ALL** y guardamos el fichero.
@@ -60,7 +60,7 @@ Accedemos a la carpeta del proyecto y desplegamos la red. Antes de desplegar la 
 
     cd ~/Low-Carbon/lowcarbon
     ls -la
-    __nos fijamos en la version del *.bna, en este caso 0.03__
+  __nos fijamos en la ultima version disponible del archivo *.bna, en este caso 0.0.3__
 
 Ahora si, desplegamos la red, donde especificamos la tarjeta creada, asi como el archivo *.bna a desplegar:
 
@@ -108,7 +108,8 @@ Instalamos los prerrequisitos de Angular, para poder levantar la interfaz web qu
 Arrancamos ahora el entorno web con Angular. Esta acción toma unos minutos en arrancar:
 
     cd ~/Low-Carbon/lowcarbon-web/
-    nohup ng serve --open --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
+    nvm use v12.8.0
+    nohup ng serve --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
 
 Podemos comprobar que la web está funcionando correctamente introduciendo en nuestro navegador 
 __<dirección ip del servidor>:4200__
@@ -145,7 +146,8 @@ Para inicializar todo desde el principio, deberemos borrar el setup instalado, p
     docker rm $( docker ps -aq )
     docker rmi $( docker images dev-* -q )
   
-Y procederemos a eliminar la carpeta del proyecto “Low-Carbon”
+Y procederemos a eliminar la carpeta del proyecto “Low-Carbon” y la carpeta "fabric-dev-servers"
 
     cd ~
     rm -rf Low-Carbon
+    rm -rf fabric-dev-servers
