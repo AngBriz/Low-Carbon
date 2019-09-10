@@ -2,7 +2,8 @@
 Low-Carbon TFM development
 
 Para realizar el despliegue de la solución propuesta partimos de un PC con Ubuntu 16.04.6 LTS instalado.
-Para la instalación de hyperledger composer vamos a crear un nuevo usuario (hyperledger), ya que debe instalarse como usuario sin privilegios y le vamos a añadir al fichero sudoers. Adquirimos permisos de root “su -” y ejecutamos los siguientes comandos:
+
+Para la instalación de hyperledger composer vamos a crear un nuevo usuario (hyperledger), ya que debe instalarse como usuario sin privilegios y le vamos a añadir al fichero sudoers. Adquirimos permisos de root **su -** y ejecutamos los siguientes comandos:
 
     sudo adduser hyperledger
     sudo vi /etc/sudoers
