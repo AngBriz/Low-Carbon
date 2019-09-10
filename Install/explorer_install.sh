@@ -19,3 +19,7 @@ sudo apt-get install mysql-server -y
 echo "# Import database to mysql"
 cd ~/Low-Carbon/blockchain-explorer
 mysql -u root -p < db/fabricexplorer.sql
+
+# Echo Done
+echo ''
+echo "Done"

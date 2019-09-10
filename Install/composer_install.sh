@@ -52,6 +52,9 @@ yo --version
 echo -n 'Composer Playground: '
 composer-playground --version
 
+# Echo Done
+echo ''
+echo "Done"
 
 # Print reminder of need to logout in order for these changes to take effect!
 echo ''

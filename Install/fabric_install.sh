@@ -23,13 +23,14 @@ curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/pack
 echo "# Extracting...."
 tar -xvzf fabric-dev-servers.tar.gz
 
+# Copy new docker-compose.yml file
+echo "# Copy new docker-compose.yml file"
+cp -R ~/Low-Carbon/Install/composer/ ./fabric-scripts/hlfv12/
+
 # Download Hyperledger Fabric
 export FABRIC_VERSION=hlfv12
 echo "# Downloading Hyperledger Fabric...."
 ./downloadFabric.sh
-
-# Copy new docker-compose.yml file
-cp -R ~/Low-Carbon/Install/composer/ ./fabric-scripts/hlfv12/
 
 # Echo Done
 echo ''

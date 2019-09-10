@@ -32,3 +32,6 @@ npm install -g @angular/cli @angular/core ngx-gauge
 echo "# Hide Angular-cli warnings"
 ng config -g cli.warnings.versionMismatch false
 
+# Echo Done
+echo ''
+echo "Done"
