@@ -21,7 +21,7 @@ curl -O https://raw.githubusercontent.com/hyperledger/composer-tools/master/pack
 
 # Extracdt downloaded file
 echo "# Extracting...."
-tar -xvf fabric-dev-servers.tar.gz
+tar -xvzf fabric-dev-servers.tar.gz
 
 # Download Hyperledger Fabric
 export FABRIC_VERSION=hlfv12
@@ -31,6 +31,3 @@ echo "# Downloading Hyperledger Fabric...."
 # Echo Done
 echo ''
 echo "Done"
-
-
-tar -xvf fabric-dev-servers.tar.gz
