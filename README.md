@@ -108,6 +108,7 @@ Instalamos los prerrequisitos de Angular, para poder levantar la interfaz web qu
 Arrancamos ahora el entorno web con Angular. Esta acción toma unos minutos en arrancar:
 
     cd ~/Low-Carbon/lowcarbon-web/
+    nvm use v12.8.0
     nohup ng serve --open --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
 
 Podemos comprobar que la web está funcionando correctamente introduciendo en nuestro navegador 
