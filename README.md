@@ -109,7 +109,7 @@ Arrancamos ahora el entorno web con Angular. Esta acción toma unos minutos en a
 
     cd ~/Low-Carbon/lowcarbon-web/
     nvm use v12.8.0
-    nohup ng serve --open --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
+    nohup ng serve --host $IP --port 4200 --disable-host-check > angular-app.out 2> angular-app.err < /dev/null &
 
 Podemos comprobar que la web está funcionando correctamente introduciendo en nuestro navegador 
 __<dirección ip del servidor>:4200__
