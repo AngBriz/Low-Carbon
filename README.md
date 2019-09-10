@@ -60,7 +60,7 @@ Accedemos a la carpeta del proyecto y desplegamos la red. Antes de desplegar la 
 
     cd ~/Low-Carbon/lowcarbon
     ls -la
-  __nos fijamos en la ultima version disponible del archivo *.bna, en este caso 0.03__
+  __nos fijamos en la ultima version disponible del archivo *.bna, en este caso 0.0.3__
 
 Ahora si, desplegamos la red, donde especificamos la tarjeta creada, asi como el archivo *.bna a desplegar:
 
