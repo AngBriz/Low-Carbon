@@ -28,6 +28,9 @@ export FABRIC_VERSION=hlfv12
 echo "# Downloading Hyperledger Fabric...."
 ./downloadFabric.sh
 
+# Copy new docker-compose.yml file
+cp -R ~/Low-Carbon/Install/composer/ ./fabric-scripts/hlfv12/
+
 # Echo Done
 echo ''
 echo "Done"
